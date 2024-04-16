@@ -1,38 +1,80 @@
-.App {
-  text-align: center;
+/* Additional CSS to ensure the section doesn't affect layout when empty */
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+.form__group {
+  position: relative;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.arrow-icon {
+  position: absolute; 
+  top:-20px;
+  left:300px;
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+ @media screen and (max-width: 768px) {
+  .arrow-icon {
+    position: absolute; 
+    top:-15px;
+    left:270px;   
+  }
+  
+}
+
+@media (max-width: 426px) {
+  .arrow-icon {
+    position: absolute; 
+    top:-15px;
+    left:310px;
+    
+  }
+  
+}
+
+@media screen and (max-width: 321px){
+  .arrow-icon{
+    position: absolute; 
+   
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@media screen and (max-width: 376px) {
+  .arrow-icon {
+    position: absolute; 
+    top:-18px;
+    left:232px;
+    
+  }
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul > div {
+  margin: 0;
+  padding: 0;
+}
+
+
+section {
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 2px 14px 0px;
+  border-radius: 1.2rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: auto;
+  z-index: 7;
+      /* Set display to none when there are no filteredOptions */
+   display: none;
+  position: absolute;
+  top: 100%;
+  left: 25%;
+  z-index: 100;
+  overflow-y: scroll;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+* {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 600;
+  font-style: normal;
 }
