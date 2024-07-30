@@ -18,7 +18,7 @@ function App() {
       {/* <Route path='/' element={  <WelcomePage/>}></Route> */}
       <Route path='/Adminpage/addVehicele' element={<Adminpage/>}></Route>
       <Route path='/Loginpage' element={ <LoginPage/>}></Route>
-      {/* <Route path='/Adminpagenew' element={  <AdminPageNew/>}></Route> */}
+      <Route path='/Adminpagenew' element={  <AdminPageNew/>}></Route>
       <Route path='/BusSchedule' element={  <BusSchedule/>}></Route>
       <Route path="/NewRoutes" element={<NewRoutes/>}></Route>
       <Route path="/NewSchedules" element={<NewSchedules/>}></Route>
